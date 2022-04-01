@@ -1,0 +1,10 @@
+<div>
+    <h3>Work History</h3>
+    <div *ngFor="let wh of workHistories">
+        <span>{{ wh.role }}</span> |
+        <span>{{ wh.duration }}</span>
+        <ul>
+            <li *ngFor="let acc of wh.accomplishments">{{ acc }}</li>
+        </ul>
+    </div>
+</div>
